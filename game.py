@@ -151,9 +151,9 @@ def choose_move(valid_moves):
     choices_moves = enumerate(valid_moves)
 
     def list_moves():
-        for idx, move in choices_moves:
+        for idx, mv in choices_moves:
             print("\t{}) {}: type {}, power {}, remaining move points: {}"
-                  .format(idx + 1, move.name, move.pktype, move.power, move.pp))
+                  .format(idx + 1, mv.name, mv.pktype, mv.power, mv.pp))
 
     list_moves()
     move_choice = input("Enter number of move, or 'list' to see your choices> ")
